@@ -36,7 +36,7 @@ class ProductCard extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(22),
                 color: itemIndex.isEven ? kBlueColor : kSecondaryColor,
-                boxShadow: [kDefaultShadow],
+                boxShadow: const [kDefaultShadow],
               ),
               child: Container(
                 margin: const EdgeInsets.only(right: 10),
@@ -82,6 +82,7 @@ class ProductCard extends StatelessWidget {
                           horizontal: kDefaultPadding),
                       child: Text(
                         product.title,
+                        // ignore: deprecated_member_use
                         style: Theme.of(context).textTheme.button,
                       ),
                     ),
@@ -101,6 +102,7 @@ class ProductCard extends StatelessWidget {
                       ),
                       child: Text(
                         "\$${product.price}",
+                        // ignore: deprecated_member_use
                         style: Theme.of(context).textTheme.button,
                       ),
                     ),

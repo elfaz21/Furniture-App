@@ -25,7 +25,7 @@ class DetailsScreen extends StatelessWidget {
       backgroundColor: kBackgroundColor,
       elevation: 0,
       leading: IconButton(
-        padding: EdgeInsets.only(left: kDefaultPadding),
+        padding: const EdgeInsets.only(left: kDefaultPadding),
         icon: SvgPicture.asset("assets/fonts/back.svg"),
         onPressed: () {
           Navigator.pop(context);
@@ -34,6 +34,7 @@ class DetailsScreen extends StatelessWidget {
       centerTitle: false,
       title: Text(
         'Back'.toUpperCase(),
+        // ignore: deprecated_member_use
         style: Theme.of(context).textTheme.bodyText2,
       ),
       actions: <Widget>[

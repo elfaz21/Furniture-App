@@ -4,6 +4,8 @@ import '../../../constants.dart';
 
 // We need statefull widget because we are gonna change some state on our category
 class CategoryList extends StatefulWidget {
+  const CategoryList({super.key});
+
   @override
   _CategoryListState createState() => _CategoryListState();
 }
